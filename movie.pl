@@ -1,17 +1,25 @@
-likes(yash,action).
-likes(rahul,advanture).
-likes(rohit,emotional).
+%User preference
+likes(amit,action).
+likes(amit,action).
+likes(rahul,sci-fi).
+likes(rahul,action).
 likes(priya,romance).
-likes(ram,comedy).
+likes(priya,comedy).
 
-movie(singham,action).
-movie(ramayana,advanture).
-movie(ti_sadhya_kay_karte,emotional).
-movie(sita_ramam,romance).
+%Movie database
+
+movie(avengers,action).
+movie(batman,action).
+movie(conjuring,horror).
+movie(intersteller,sci-fi).
+movie(inception,sci-fi).
+movie(titanic,romance).
+movie(_idiots,comedy).
 movie(hera_pheri,comedy).
 
-#rules
+%Recommendation rule
+
 recommend(User,Movie):-
-recommend(User,Movie);
-likes(User,Genre).
-movie(Movie,Genre).
+    likes(User,Genre),
+    movie(Movie,Genre).
+

@@ -1,4 +1,3 @@
-
 driver(rohit,latur,udgir).
 driver(rohan,udgir,nanded).
 driver(dhanraj,kohlapur,sangli).
@@ -12,7 +11,5 @@ passanger(ram,rajapur,vita).
 passanger(arjun,pune,latur).
 
 carpooling(Driver,Passanger):-
-driver(Passanger,From,To),
-passanger(Driver,From,To).
-
-
+driver(Driver,From,To),
+passanger(Passanger,From,To).

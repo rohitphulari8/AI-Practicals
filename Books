@@ -1,0 +1,15 @@
+writer(vyasa, epic_poetry, mahabharata).
+writer(valmiki, epic_poetry, ramayana).
+writer(kalidasa, classic_drama, shakuntala).
+writer(ved_vyasa, scripture, bhagavad_gita).
+writer(tulsidas, devotional_poetry, ramcharitmanas).
+
+reader(arjun, epic_poetry, mahabharata).
+reader(sitafal, epic_poetry, ramayana).
+reader(vikram, classic_drama, shakuntala).
+reader(kavya, scripture, bhagavad_gita).
+reader(rohan, devotional_poetry, ramcharitmanas).
+
+book_match(Writer, Reader) :-
+writer(Writer, Genre, Book),
+reader(Reader, Genre, Book).

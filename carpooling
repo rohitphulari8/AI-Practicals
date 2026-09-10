@@ -11,8 +11,8 @@ passanger(rutuja,kohlapur,sangli).
 passanger(ram,rajapur,vita).
 passanger(arjun,pune,latur).
 
-carpooling(Driver,Passanger).
-driver(Passanger,From,To).
+carpooling(Driver,Passanger):-
+driver(Passanger,From,To),
 passanger(Driver,From,To).
 
 
